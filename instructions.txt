@@ -11,6 +11,10 @@ B.
 1. Identify the folder that contains your mail signatures.
   On my Mac this is ~/Library/Mail/V2/MailData/Signatures.
   We can check this online it depends on what version of Mail you are using.
+  If that doesn't work try substituting one of these locations:
+~/Library/Mobile\ Documents/com~apple~Mail/Data/MailData/Signatures/
+~/Library/Mobile\ Documents/Mail/Data/MailData/Signatures/
+
 2. Open finder, select "go" and "go to folder" then enter the folder location:
 ~/Library/Mail/V2/MailData/Signatures
 3. Right click on the file(s) ending with .mailsignature and 'open with' the application TextEdit.
@@ -23,3 +27,5 @@ B.
 REFERENCES
 http://www.dummies.com/how-to/content/how-to-add-a-signature-to-your-apple-mail-emails.html
 https://www.youtube.com/watch?v=f07jC8GhCnA
+http://matt.coneybeare.me/how-to-make-an-html-signature-in-apple-mail-for-yosemite-os-x-10-dot-10/
+
