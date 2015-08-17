@@ -1,0 +1,25 @@
+STEPS TO INSTALL THE FOOTER
+
+A.
+1. Choose Mail→Preferences and click the Signatures button.
+2. Select the account the footer will be used with and create a new footer called footer1
+3. Enter the placeholder text FOOTER1 instead of the default content
+4. Drag the footer on to the account it will be used with
+5. Click "Mail" then "Quit Mail" (important)
+
+B.
+1. Identify the folder that contains your mail signatures.
+  On my Mac this is ~/Library/Mail/V2/MailData/Signatures.
+  We can check this online it depends on what version of Mail you are using.
+2. Open finder, select "go" and "go to folder" then enter the folder location:
+~/Library/Mail/V2/MailData/Signatures
+3. Right click on the file(s) ending with .mailsignature and 'open with' the application TextEdit.
+  until you find the one that contains the placeholder text FOOTER1
+4. Replace the text FOOTER1 with the contents of the file footer1.txt and save the file.
+5. Start Apple Mail and see your footer image appear in footer1.
+
+
+
+REFERENCES
+http://www.dummies.com/how-to/content/how-to-add-a-signature-to-your-apple-mail-emails.html
+https://www.youtube.com/watch?v=f07jC8GhCnA
