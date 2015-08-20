@@ -8,19 +8,38 @@ A.
 5. Click "Mail" then "Quit Mail" (important)
 
 B.
-1. Identify the folder that contains your mail signatures.
-  On my Mac this is ~/Library/Mail/V2/MailData/Signatures.
-  We can check this online it depends on what version of Mail you are using.
-  If that doesn't work try substituting one of these locations:
-~/Library/Mobile\ Documents/com~apple~Mail/Data/MailData/Signatures/
-~/Library/Mobile\ Documents/Mail/Data/MailData/Signatures/
+New instructions for part B:
 
-2. Open finder, select "go" and "go to folder" then enter the folder location:
-~/Library/Mail/V2/MailData/Signatures
-3. Right click on the file(s) ending with .mailsignature and 'open with' the application TextEdit.
-  until you find the one that contains the placeholder text FOOTER1
-4. Replace the text FOOTER1 with the contents of the file footer1.txt and save the file.
-5. Start Apple Mail and see your footer image appear in footer1.
+1. OPEN TERMINAL AND RUN THIS CODE:
+find ~/Library -name '*.mailsignature' -exec open -a textedit {} +
+
+
+2. IN THE WINDOW(S) THAT APPEAR (AND CONTAIN ‘FOOTER1’) 
+   REPLACE EVERYTHING BELOW THESE LINES: 
+
+Content-Transfer-Encoding: 7bit
+Content-Type: text/html;
+	charset=us-ascii
+Message-Id: <1BC26D99-2C50-4502-A1B0-AFFEDDEC8490@gateway.2wire.net>
+Mime-Version: 1.0 (Mac OS X Mail 8.2 \(2098\))
+
+
+WITH THIS, THEN SAVE THE FILE:
+
+<body style="color: rgb(0, 0, 0); letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;"><div>--<br>
+<a href="http://www.cairniewheeber.scot?source=footer1">www.cairniewheeber.scot<br>
+<img src="http://cairniewheeber.scot/wordpress/wp-content/uploads/2015/08/cairniesignature.png"
+width="506" height="167"
+alt="Cairnie Wheeber - furnishing fabrics by Ruth Hyde" />
+</a>
+</div></body>
+
+
+
+3. QUIT MAIL AND OPEN IT AGAIN.
+
+
+
 
 
 
@@ -28,4 +47,5 @@ REFERENCES
 http://www.dummies.com/how-to/content/how-to-add-a-signature-to-your-apple-mail-emails.html
 https://www.youtube.com/watch?v=f07jC8GhCnA
 http://matt.coneybeare.me/how-to-make-an-html-signature-in-apple-mail-for-yosemite-os-x-10-dot-10/
-
+http://stackoverflow.com/questions/8607888/finding-all-files-with-certain-extension-in-unix
+http://stackoverflow.com/questions/864316/how-to-pipe-list-of-files-returned-by-find-command-to-cat-to-view-all-the-files
